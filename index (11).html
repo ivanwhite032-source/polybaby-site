@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>polybaby! — Свят Лебедев</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg:#0d1117;--bg2:#161b22;--card:#1c2330;--accent:#e6a117;--accent2:#ffd166;--text:#e6edf3;--muted:#8b949e;--border:#2d333b}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;min-height:100vh}
+  .container{max-width:900px;margin:0 auto;padding:0 20px}
+  /* HERO */
+  .hero{background:linear-gradient(135deg,#1a2233 0%,#0d1117 60%,#241a0d 100%);padding:70px 0 50px;text-align:center;border-bottom:1px solid var(--border)}
+  .nick{font-size:56px;font-weight:800;color:var(--accent2);text-shadow:0 0 30px rgba(230,161,23,.35);letter-spacing:1px}
+  .realname{font-size:22px;color:var(--text);margin-top:8px;font-weight:600}
+  .tagline{color:var(--muted);font-size:16px;margin-top:6px}
+  .badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+  .badge{background:rgba(230,161,23,.1);border:1px solid rgba(230,161,23,.35);color:var(--accent2);padding:6px 16px;border-radius:20px;font-size:13px}
+  .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-block;padding:12px 28px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;transition:.2s}
+  .btn-music{background:var(--accent);color:#111}
+  .btn-music:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(230,161,23,.3)}
+  .btn-vk{background:transparent;border:1px solid #4a76a8;color:#7ab3ff}
+  .btn-vk:hover{background:rgba(74,118,168,.15);transform:translateY(-2px)}
+  /* SECTIONS */
+  section{padding:44px 0;border-bottom:1px solid var(--border)}
+  h2{font-size:26px;margin-bottom:20px;color:var(--accent2)}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;transition:.2s}
+  .card:hover{border-color:rgba(230,161,23,.4)}
+  .quote{background:linear-gradient(135deg,rgba(230,161,23,.12),rgba(230,161,23,.03));border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:24px;font-size:17px;font-style:italic}
+  .quote-author{text-align:right;color:var(--accent2);font-style:normal;font-weight:700;margin-top:12px}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .fact{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+  .fact-label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .fact-value{font-size:17px;font-weight:600;margin-top:4px}
+  table.pos{width:100%;border-collapse:collapse}
+  table.pos td{padding:10px 12px;border-bottom:1px solid var(--border)}
+  table.pos td:first-child{color:var(--muted);width:40%}
+  .link-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;text-decoration:none;color:var(--text);transition:.2s;margin-bottom:12px}
+  .link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+  .link-card .t{font-weight:700;font-size:18px;color:var(--accent2)}
+  .link-card .d{color:var(--muted);font-size:14px;margin-top:4px}
+  footer{text-align:center;color:var(--muted);padding:30px 0;font-size:13px}
+  /* scroll reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="nick">polybaby!</div>
+    <div class="realname">Свят Лебедев</div>
+    <div class="tagline">Музыкант · Артист · Вичуга</div>
+    <div class="badges">
+      <span class="badge">🎂 23 ноября</span>
+      <span class="badge">📍 г. Вичуга, Ивановская область</span>
+      <span class="badge">🎓 11 классов</span>
+      <span class="badge">🎵 Увлекается музыкой</span>
+    </div>
+    <div class="btns">
+      <a class="btn btn-music" href="https://music.yandex.ru/artist/23804037" target="_blank" rel="noopener">♫ Слушать музыку</a>
+      <a class="btn btn-vk" href="https://vk.ru/polarnij" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+  </div>
+</header>
+
+<section class="reveal">
+  <div class="container">
+    <h2>О себе</h2>
+    <div class="card" style="font-size:17px">«Я — то, что не приветствуется в обычном мире.»</div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <h2>Жизненная позиция</h2>
+    <div class="card">
+      <table class="pos">
+        <tr><td>Главное в жизни</td><td>Совершенствование мира</td></tr>
+        <tr><td>Главное в людях</td><td>Доброта и честность</td></tr>
+        <tr><td>Отн. к курению</td><td>Компромиссное</td></tr>
+        <tr><td>Отн. к алкоголю</td><td>Нейтральное</td></tr>
+        <tr><td>Вдохновляют</td><td>Люди</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <h2>Интересы</h2>
+    <div class="card">
+      <table class="pos">
+        <tr><td>Деятельность</td><td>Музыкант, артист</td></tr>
+        <tr><td>Интересы</td><td>Добиться невозможного</td></tr>
+        <tr><td>Любимая музыка</td><td>Музыка, которая вдохновляет</td></tr>
+        <tr><td>Любимые фильмы</td><td>«Сталкер», «1+1», «Голкипер», «Отбросы»</td></tr>
+        <tr><td>Любимые книги</td><td>Справочники, самоучители, нон-фикшн</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <h2>Любимая цитата</h2>
+    <div class="quote">
+      «Я какой день уже просыпаюсь с одной и той же мыслью: для чего нам друг друга ненавидеть и друг друга топить, если мы можем друг другу помогать и друг друга учить?»
+      <div class="quote-author">— polybaby!</div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <h2>Музыка и соцсети</h2>
+    <a class="link-card" href="https://music.yandex.ru/artist/23804037" target="_blank" rel="noopener">
+      <div class="t">♫ Яндекс Музыка</div>
+      <div class="d">Страница артиста — вся музыка polybaby! в одном месте</div>
+    </a>
+    <a class="link-card" href="https://vk.ru/polarnij" target="_blank" rel="noopener">
+      <div class="t">ВКонтакте</div>
+      <div class="d">Личный профиль — написать и следить за новостями</div>
+    </a>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <h2>Факты</h2>
+    <div class="facts">
+      <div class="fact"><div class="fact-label">Ник</div><div class="fact-value">polybaby!</div></div>
+      <div class="fact"><div class="fact-label">Имя</div><div class="fact-value">Свят Лебедев</div></div>
+      <div class="fact"><div class="fact-label">День рождения</div><div class="fact-value">23 ноября</div></div>
+      <div class="fact"><div class="fact-label">Город</div><div class="fact-value">Вичуга, Ивановская область</div></div>
+      <div class="fact"><div class="fact-label">Образование</div><div class="fact-value">11 классов</div></div>
+      <div class="fact"><div class="fact-label">Деятельность</div><div class="fact-value">Музыкант, артист</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>polybaby! · Свят Лебедев · Вичуга</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('visible')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('visible');io.unobserve(en.target)}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
